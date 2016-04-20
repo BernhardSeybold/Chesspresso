@@ -1,0 +1,38 @@
+/*
+ * Copyright (C) Bernhard Seybold. All rights reserved.
+ *
+ * This software is published under the terms of the LGPL Software License,
+ * a copy of which has been included with this distribution in the LICENSE.txt
+ * file.
+ *
+ * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ *
+ * $Id: PGNErrorHandler.java,v 1.1 2002/12/08 13:27:34 BerniMan Exp $
+ */
+
+package chesspresso.pgn;
+
+/**
+ * Interface for handlers of PGN errors as produced by {@link PGNReader}.
+ *
+ * @author  Bernhard Seybold
+ * @version $Revision: 1.1 $
+ */
+public interface PGNErrorHandler
+{
+    /**
+     * Called in case of an error.
+     *
+     *@return the error
+     */
+    public void handleError(PGNSyntaxError error);
+    
+    /**
+     * Called in case of a warning.
+     *
+     *@return the warning
+     */
+    public void handleWarning(PGNSyntaxError warning);
+}

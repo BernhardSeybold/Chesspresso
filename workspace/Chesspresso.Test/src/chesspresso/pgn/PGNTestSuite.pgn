@@ -1,0 +1,321 @@
+[Event "Only a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4
+8. O-O Nxc3 9. bxc3 Bxc3 10. d5 1-0
+
+[Event "Some nags"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "3"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 $1 e5 2. Nf3 Nc6 3. Bc4 Bc5 $6 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 $1 Nxe4
+8. O-O Nxc3 9. bxc3 Bxc3 $1 $7 10. d5 1-0
+
+[Event "Some comment"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "4"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 {dangerous against BerniMan} 4. c3 Nf6 5. d4 exd4
+6. cxd4 Bb4+ 7. Nc3 {what a move} 7... Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. d5 1-0
+
+[Event "Lines"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "5"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 (2. Nc3 Nf6 3. f4 exf4 4. e5 ) 2... Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4
+6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 (8... Bxc3) 9. bxc3 Bxc3 10. d5 1-0
+
+[Event "Nested lines"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "6"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 (2. Nc3 Nf6 3. f4 exf4 (3... d6) 4. e5 ) 2... Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4
+6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 (8... Bxc3) 9. bxc3 Bxc3 10. d5 1-0
+
+[Event "More than one alternative"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "7"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 (2. Nc3 Nf6 3. f4 exf4 (3... d6) (3... d5) (3... Nc6) 4. e5 ) 2... Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4
+6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 (8... Bxc3) 9. bxc3 Bxc3 10. d5 1-0
+
+[Event "Two closing brackets"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "8"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 (2. Nc3 Nf6 3. f4 exf4 (3... d6)) 2... Nc6 1-0
+
+[Event "B0424 Interposing/Unterbrechen der Vert"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "9"]
+[White "Shirov, A."]
+[Black "Mozetic, D."]
+[Result "1-0"]
+[WhiteElo "2685"]
+[BlackElo "2580"]
+[FEN "5rk1/1pp2ppp/r7/p6q/5P2/2P4P/PP2n2K/RNBQ1R2 w - - 0 22"]
+
+22. Nd2 $19 Rd8 $2 (22... Rh6 23. Rf3 Ng3 $3 {<-> 3, >< h3} 24. Kxg3 (24. Rxg3
+Qxd1 $19) 24... Qxh3+ 25. Kf2 Qh2+ 26. Ke3 Rd8 $1 {/\ ...Re6+} (26... Rd6 $143
+{/\ ...Re8+} 27. Qa4 $1 (27. Qf1 Re8+ 28. Ne4 f5 29. Qc4+ Kh8 30. Rf2 Qg3+ 31.
+Ke2 (31. Rf3 Qe1+ 32. Qe2 Rxe4#) 31... Qg4+ 32. Ke3 (32. Rf3 Rxe4+ 33. Qxe4
+fxe4 $19) (32. Ke1 Rd1#) 32... b5 $3 {>< Ne4} 33. Qd4 (33. Qxb5 Rxe4#) 33...
+Rxd4 34. cxd4 Rxe4+ 35. Kd2 (35. Kd3 Qg3+ $19) 35... Qg3 $19 {>< Rf2,Pd4}) (27.
+f5 Re8+ $19) 27... Rfd8 28. Qd4 $1 (28. Qc4 Rxd2 $1 29. Bxd2 Qxd2+ 30. Ke4 Qc2+
+31. Ke5 (31. Rd3 Qe2+ 32. Kf5 Rxd3 $19 {->}) (31. Ke3 Re8+ $19) 31... Re8+ 32.
+Kd4 Qe4+ 33. Kc5 Qc6+ 34. Kd4 Re4+ $19) 28... Qg1+ (28... Re8+ 29. Kd3 Qe2+ 30.
+Kc2 $17) 29. Ke2 Rxd4 30. cxd4 Qxd4 $17) 27. f5 (27. Qf1 Re6+ 28. Ne4 Qc2 (
+28... f5 $2 29. Qc4) 29. Rh3 Qxe4+ 30. Kf2 Qc2+ $19) (27. Qa4 Qg1+ 28. Rf2 (28.
+Ke4 Re6+ $19) (28. Ke2 Rh2+ $19) 28... Re6+ 29. Qe4 (29. Ne4 Qg3+ 30. Ke2 (30.
+Rf3 Qe1#) 30... Qd3+ 31. Ke1 Rxe4+ 32. Qxe4 Qd1#) (29. Kf3 Rd3#) 29... Qg3+ 30.
+Nf3 (30. Rf3 Qe1#) (30. Ke2 Qd3+ 31. Ke1 Rxe4+ $19) 30... Rxe4+ 31. Kxe4 Qxf2
+$19) 27... Qe5+ 28. Kf2 (28. Ne4 Rxd1 $19) 28... Rh2+ 29. Kg1 Re2 $1 {>< h2,e1}
+30. Kf1 Re8 $1 31. Qa4 Qh2 32. Qxe8+ Rxe8 $19 {->}) 23. Rf2 $3 {>< f1} 23...
+Rd3 24. Qf1 Rh6 25. Nf3 g6 (25... Rd1 26. Rxe2 $1 $18) (25... Qf5 26. Rxe2 $18)
+(25... Nxc1 26. Rxc1 Qf5 27. Ng1 $18) 26. Qg2 $18 {1-0/32} 1-0
+
+[Event "theEvent"]
+[Site "theSite"]
+[Date "2001.07.29"]
+[Round "10"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+[WhiteElo "2153"]
+[BlackElo "2000"]
+[EventDate "2001.07.29"]
+[Eco "A00"]
+[A "a"]
+[B "b"]
+[C "c"]
+[D "d"]
+[A "aa"]
+[C "ccc"]
+[E ""]
+
+1. e4 1/2-1/2
+
+
+; TODO en passant
+; TODO en passant for check response moves
+
+
+%----------------------------------------------------------------------
+% Results
+%----------------------------------------------------------------------
+
+
+% Result *
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "2"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "*"]
+
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 *
+
+
+% No result in move section
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "2"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "*"]
+
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5
+
+
+% Result in header does not match result in game section -> take header
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "2"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 1-0
+
+
+% Result after a move number
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "2"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 4. 1/2-1/2
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "2"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "*"]
+
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 4. *
+
+
+
+%----------------------------------------------------------------------
+% Castle with zeros
+%----------------------------------------------------------------------
+
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2001.07.25"]
+[Round "2"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+
+1. e4 e5 2. Nf3 Nf6 3. Bc4 Bc5 4. 0-0 0-0 1/2-1/2
+
+
+
+%----------------------------------------------------------------------
+% Messing with move numbers
+%----------------------------------------------------------------------
+
+
+% unnecessary but correct move numbers
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+1. e4 1... e5 2. Nf3 2... Nc6 3. Bc4 3... Bc5 1-0
+
+
+% wrong move numbers
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+2. e4 3... e5 4. Nf3 5... Nc6 6. Bc4 7... Bc5 1-0
+
+
+% missing move numbers
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1-0"]
+
+e4 e5 Nf3 Nc6 Bc4 Bc5 1-0
+
+
+
+%----------------------------------------------------------------------
+% Different start positions
+%----------------------------------------------------------------------
+
+
+% White to move
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+[FEN "k7/8/8/8/8/8/8/7K w - - 0 1"]
+
+1. Kh2 1/2-1/2
+
+
+% Black to move
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+[FEN "k7/8/8/8/8/8/8/7K b - - 0 1"]
+
+1... Ka7 1/2-1/2
+
+
+% White to move, wrong move number
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+[FEN "k7/8/8/8/8/8/8/7K w - - 0 3"]
+
+4. Kh2 1/2-1/2
+
+
+% Black to move, wrong move number
+
+[Event "Just a game"]
+[Site "?"]
+[Date "2003.01.05"]
+[Round "1"]
+[White "BerniMan"]
+[Black "Looser"]
+[Result "1/2-1/2"]
+[FEN "k7/8/8/8/8/8/8/7K b - - 0 3"]
+
+17... Ka7 1/2-1/2

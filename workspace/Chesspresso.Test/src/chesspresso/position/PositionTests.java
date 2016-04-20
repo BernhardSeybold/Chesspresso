@@ -14,14 +14,13 @@
 
 package chesspresso.position;
 
-import junit.framework.*;
 
 /**
  *
  * @author Bernhard Seybold
  * @version $Revision: 1.1 $
  */
-public abstract class PositionTests extends TestCase
+public abstract class PositionTests
 {
     
     /**
@@ -29,10 +28,5 @@ public abstract class PositionTests extends TestCase
      */
     protected abstract ImmutablePosition createPosition();
     
-    //======================================================================
-    
-    public void testSomething()
-    {
-    }
     
 }

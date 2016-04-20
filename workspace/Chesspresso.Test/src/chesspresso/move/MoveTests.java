@@ -6,8 +6,13 @@
 
 package chesspresso.move;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import chesspresso.Chess;
-import junit.framework.*;
+import junit.framework.TestCase;
+
 
 /**
  *
@@ -17,18 +22,6 @@ import junit.framework.*;
 public class MoveTests extends TestCase
 {
 
-    public static Test suite()
-    {
-        return new TestSuite(MoveTests.class);
-    }
-    
-    public static void main (String[] args)
-    {
-        junit.textui.TestRunner.run(suite());
-    }
-
-    //======================================================================
-    
     private void checkMove(short move,
                            int from, int to,
                            boolean isCapturing, boolean isPromo, int promoPiece, boolean isEPMove,
@@ -52,6 +45,7 @@ public class MoveTests extends TestCase
         assertEquals("isValid is wrong " + Move.getString(move),   isValid  , Move.isValid(move));
     }
     
+    @Test
     public void testMove() throws Exception
     {
         for (int from = 0; from < Chess.NUM_OF_SQUARES; from++) {

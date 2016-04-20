@@ -14,14 +14,19 @@
 
 package chesspresso.pgn;
 
-import junit.framework.*;
-import ch.seybold.util.FootprintTestCase;
-import chesspresso.game.*;
-import chesspresso.move.*;
-import chesspresso.position.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-import java.io.*;
-import java.util.zip.*;
+import java.io.InputStream;
+import java.util.zip.GZIPInputStream;
+
+import org.junit.Test;
+
+import ch.seybold.util.FootprintTestCase;
+import chesspresso.game.Game;
+import chesspresso.game.GameModel;
+import chesspresso.move.Move;
+import chesspresso.position.Position;
 
 
 /**
@@ -33,43 +38,34 @@ import java.util.zip.*;
 public class PGNReaderTest extends FootprintTestCase
 {
     
-    public static Test suite()
-    {
-        return new TestSuite(PGNReaderTest.class);
-    }
-    
-    public static void main (String[] args)
-    {
-        junit.textui.TestRunner.run(suite());
-    }
-
-    //======================================================================
-    
+    @Test
     public void testPGNReadWrite() throws Exception
     {
         doParseTest("PGNTest", true);
     }
     
+    @Test
     public void testPGNSuite() throws Exception
     {
         doParseTest("PGNTestSuite", false);
     }
     
+    @Test
     public void testFidech99() throws Exception
     {
         doExtendedTest("fidech99", true);
     }
     
+    @Test
     public void testChusa99() throws Exception
     {
         doExtendedTest("chusa99", true);
     }
     
-    public void doParseTest(String name, boolean zipped) throws Exception
+    private void doParseTest(String name, boolean zipped) throws Exception
     {
         String pgnFilename;
         InputStream is;
-        String footprintName;
         if (zipped) {
             pgnFilename = "chesspresso/pgn/" + name + ".pgn.gz";
             is = new GZIPInputStream(ClassLoader.getSystemResourceAsStream(pgnFilename));
@@ -82,7 +78,9 @@ public class PGNReaderTest extends FootprintTestCase
         
         PGNReader pgnReader = new PGNReader(is, pgnFilename);
         pgnReader.setErrorHandler(new PGNErrorHandler() {
+            @Override
             public void handleError(PGNSyntaxError error) {writeln(PGN.TOK_PGN_ESCAPE + error.toString());}
+            @Override
             public void handleWarning(PGNSyntaxError warning)  {writeln(PGN.TOK_PGN_ESCAPE + warning.toString());}
         });
         
@@ -102,7 +100,7 @@ public class PGNReaderTest extends FootprintTestCase
         stopFootprint();
     }
     
-    public void doExtendedTest(String name, boolean zipped) throws Exception
+    private void doExtendedTest(String name, boolean zipped) throws Exception
     {
         String pgnFilename;
         InputStream is;
@@ -117,7 +115,9 @@ public class PGNReaderTest extends FootprintTestCase
         
         PGNReader pgnReader = new PGNReader(is, pgnFilename);
         pgnReader.setErrorHandler(new PGNErrorHandler() {
+            @Override
             public void handleError(PGNSyntaxError error) {writeln(error.toString());}
+            @Override
             public void handleWarning(PGNSyntaxError warning)  {writeln(warning.toString());}
         });
         

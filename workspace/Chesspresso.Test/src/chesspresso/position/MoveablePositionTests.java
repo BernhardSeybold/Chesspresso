@@ -14,9 +14,17 @@
 
 package chesspresso.position;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.LineNumberReader;
+
+import org.junit.Test;
+
 import chesspresso.Chess;
-import chesspresso.move.*;
-import java.io.*;
+import chesspresso.move.IllegalMoveException;
+import chesspresso.move.Move;
 
 /**
  *
@@ -51,6 +59,7 @@ public abstract class MoveablePositionTests extends MutablePositionTests
     
     //======================================================================
     
+    @Test
     public void testMove() throws IllegalMoveException
     {
         MoveablePosition position = createMoveablePosition();
@@ -59,6 +68,7 @@ public abstract class MoveablePositionTests extends MutablePositionTests
         position.doMove(Move.getPawnMove(Chess.E2, Chess.E4, false, Chess.NO_PIECE));
     }
     
+    @Test
     public void testGenerateMoves_basic()
     {
         MoveablePosition position = createMoveablePosition();
@@ -69,6 +79,7 @@ public abstract class MoveablePositionTests extends MutablePositionTests
                      getAllMoves(position));
     }
     
+    @Test
     public void testGenerateMoves_extended() throws IOException
     {        
         LineNumberReader in = new LineNumberReader(

@@ -14,30 +14,14 @@
 
 package chesspresso.position;
 
-import junit.framework.*;
-
 /**
  *
  * @author Bernhard Seybold
  * @version $Revision: 1.1 $
  */
-public class TestCompactPosition extends PositionTests
-{
-    
-    public static Test suite()
-    {
-        return new TestSuite(TestCompactPosition.class);
-    }
-    
-    public static void main (String[] args)
-    {
-        junit.textui.TestRunner.run(suite());
-    }
-
-    //======================================================================
-    
-    protected ImmutablePosition createPosition() {return new CompactPosition();}
-    
-    //======================================================================
+public class TestCompactPosition extends PositionTests {
+        
+    @Override
+	protected ImmutablePosition createPosition() {return new CompactPosition();}
     
 }

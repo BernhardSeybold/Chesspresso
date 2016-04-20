@@ -13,12 +13,14 @@
  */
 package chesspresso.game;
 
-import chesspresso.pgn.*;
-import ch.seybold.util.*;
+import java.io.InputStream;
+import java.util.zip.GZIPInputStream;
 
-import java.io.*;
-import java.util.zip.*;
-import junit.framework.*;
+import org.junit.Test;
+
+import ch.seybold.util.FootprintTestCase;
+import chesspresso.pgn.PGNReader;
+import chesspresso.pgn.PGNWriter;
 
 /**
  * 
@@ -30,18 +32,7 @@ import junit.framework.*;
 public class GameTests extends FootprintTestCase
 {
 
-	public static Test suite()
-	{
-		return new TestSuite(GameTests.class);
-	}
-    
-	public static void main (String[] args)
-	{
-		junit.textui.TestRunner.run(suite());
-	}
-
-	//======================================================================
-    
+	@Test
 	public void testInsertGame() throws Exception
 	{
 		String pgnFilename = "chesspresso/pgn/chusa99.pgn.gz";

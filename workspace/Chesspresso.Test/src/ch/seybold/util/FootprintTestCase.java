@@ -15,9 +15,21 @@
 package ch.seybold.util;
 
 
-import junit.framework.*;
-import java.io.*;
-import java.util.zip.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.LineNumberReader;
+import java.io.PrintStream;
+import java.io.Writer;
+import java.util.zip.GZIPInputStream;
+import java.util.zip.GZIPOutputStream;
 
 
 /**
@@ -42,7 +54,7 @@ import java.util.zip.*;
  * @author  Bernhard Seybold
  * @version $Revision: 1.3 $
  */
-public abstract class FootprintTestCase extends TestCase
+public abstract class FootprintTestCase
 {
     
     private LineNumberReader m_in;
@@ -52,17 +64,20 @@ public abstract class FootprintTestCase extends TestCase
     
     private class FootprintWriter extends Writer
     {
-        public void close() throws IOException
+        @Override
+		public void close() throws IOException
         {
             m_out.close();
         }
         
-        public void flush() throws IOException
+        @Override
+		public void flush() throws IOException
         {
             m_out.flush();
         }
         
-        public void write(char[] cbuf, int off, int len) throws IOException
+        @Override
+		public void write(char[] cbuf, int off, int len) throws IOException
         {
             FootprintTestCase.this.write(new String(cbuf, off, len));
         }

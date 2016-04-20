@@ -14,8 +14,6 @@
 
 package chesspresso.position;
 
-import junit.framework.*;
-
 /**
  * Concrete test for the Position class.
  *
@@ -25,20 +23,13 @@ import junit.framework.*;
 public class TestPosition extends MoveablePositionTests
 {
     
-    public static Test suite()
-    {
-        return new TestSuite(TestPosition.class);
-    }
-    
-    public static void main (String[] args)
-    {
-        junit.textui.TestRunner.run(suite());
-    }
-
-    //======================================================================
-    
+    @Override
     protected ImmutablePosition createPosition()         {return new Position();}
+    
+    @Override
     protected MutablePosition   createMutablePosition()  {return new Position();}
+    
+    @Override
     protected MoveablePosition  createMoveablePosition() {return new Position();}
     
 }

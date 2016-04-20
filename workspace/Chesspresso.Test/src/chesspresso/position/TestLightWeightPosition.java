@@ -14,8 +14,6 @@
 
 package chesspresso.position;
 
-import junit.framework.*;
-
 /**
  *
  * @author Bernhard Seybold
@@ -24,19 +22,10 @@ import junit.framework.*;
 public class TestLightWeightPosition extends MutablePositionTests
 {
     
-    public static Test suite()
-    {
-        return new TestSuite(TestLightWeightPosition.class);
-    }
+    @Override
+    protected ImmutablePosition createPosition()        {return new LightWeightPosition();}
     
-    public static void main (String[] args)
-    {
-        junit.textui.TestRunner.run(suite());
-    }
-
-    //======================================================================
-    
-    protected ImmutablePosition       createPosition()        {return new LightWeightPosition();}
-    protected MutablePosition createMutablePosition() {return new LightWeightPosition();}
+    @Override
+    protected MutablePosition   createMutablePosition() {return new LightWeightPosition();}
     
 }

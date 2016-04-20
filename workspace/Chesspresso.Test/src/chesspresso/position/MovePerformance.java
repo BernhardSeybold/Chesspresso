@@ -14,13 +14,16 @@
 
 package chesspresso.position;
 
+import java.io.InputStream;
+import java.util.zip.GZIPInputStream;
+
+import org.junit.Test;
+
 import ch.seybold.util.PerformanceTest;
-import chesspresso.game.*;
-import chesspresso.move.*;
-import chesspresso.pgn.*;
-import java.io.*;
-import java.util.zip.*;
-import junit.framework.*;
+import chesspresso.game.Game;
+import chesspresso.game.GameModel;
+import chesspresso.move.Move;
+import chesspresso.pgn.PGNReader;
 
 
 /**
@@ -32,18 +35,6 @@ import junit.framework.*;
 public class MovePerformance extends PerformanceTest
 {
    
-    public static Test suite()
-    {
-        return new TestSuite(MovePerformance.class);
-    }
-    
-    public static void main (String[] args)
-    {
-        junit.textui.TestRunner.run(suite());
-    }
-
-    //======================================================================
-    
     private int search(Position pos, int depth) throws Exception
     {
         if (depth < 0) return 1;
@@ -58,6 +49,7 @@ public class MovePerformance extends PerformanceTest
         return sum;
     }
     
+    @Test
     public void testSearch() throws Exception
     {
         resetTimer(new String[] {"positions"});
@@ -68,6 +60,7 @@ public class MovePerformance extends PerformanceTest
     
     //======================================================================
     
+    @Test
     public void testDosAndUndos() throws Exception
     {
         final int DO_MUL = 100, GEN_MUL = 10;
@@ -136,6 +129,7 @@ public class MovePerformance extends PerformanceTest
     
     //======================================================================
     
+    @Test
     public void testPositionCreation() throws Exception
     {
         int MUL = 10000;

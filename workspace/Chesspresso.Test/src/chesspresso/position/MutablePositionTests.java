@@ -14,6 +14,10 @@
 
 package chesspresso.position;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
 
 /**
  *
@@ -27,6 +31,7 @@ public abstract class MutablePositionTests extends PositionTests
     
     //======================================================================
     
+    @Test
     public void testFENStartpos()
     {
         MutablePosition position = createMutablePosition();
@@ -35,6 +40,7 @@ public abstract class MutablePositionTests extends PositionTests
         assertEquals("STARTPOS", FEN.START_POSITION, position.getFEN());
     }
     
+    @Test
     public void testStartpos()
     {
         MutablePosition position = createMutablePosition();

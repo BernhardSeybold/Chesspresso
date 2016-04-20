@@ -39,7 +39,7 @@ public class GameTests extends FootprintTestCase
 		InputStream is = new GZIPInputStream(ClassLoader.getSystemResourceAsStream(pgnFilename));
 		PGNReader pgnReader = new PGNReader(is, "InserTest");
 		PGNWriter pgnWriter = new PGNWriter(getFootprint());		
-		startFootprint("chesspresso/pgn/InsertGameTest.pgn.gz", true);
+		startFootprint("InsertGameTest.pgn.gz", true);
         
 		GameModel gameModel = pgnReader.parseGame();
 		for (;;) {

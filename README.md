@@ -25,7 +25,7 @@ Browse the entire [Javadoc](http://www.chesspresso.org/javadoc/index.html) to ge
 
 *   [Chess](http://www.chesspresso.org/javadoc/chesspresso/Chess.html): a class containing general definitions for chess
 *   [Move](http://www.chesspresso.org/javadoc/chesspresso/move/Move.html): a class representing chess moves
-*   Position: several abstractions of a chess position are available: [immutable](http://www.chesspresso.org/javadoc/chesspresso/position/ImmutablePosition.html), [mutable](javadoc/chesspresso/position/MutablePosition.html), and [moveable](javadoc/chesspresso/position/MoveablePosition.html) position (move, undo move, generateAllMoves) interfaces plus implementations, the [main](javadoc/chesspresso/position/Position.html) one is based on bitboards.
+*   Position: several abstractions of a chess position are available: [immutable](http://www.chesspresso.org/javadoc/chesspresso/position/ImmutablePosition.html), [mutable](http://www.chesspresso.org/javadoc/chesspresso/position/MutablePosition.html), and [moveable](javadoc/chesspresso/position/MoveablePosition.html) position (move, undo move, generateAllMoves) interfaces plus implementations, the [main](javadoc/chesspresso/position/Position.html) one is based on bitboards.
 *   [Game](http://www.chesspresso.org/javadoc/chesspresso/game/Game.html): abstraction of a chess game with support for lines, annotations, ability to traverse, walk through the game, etc.
 
 ## Views

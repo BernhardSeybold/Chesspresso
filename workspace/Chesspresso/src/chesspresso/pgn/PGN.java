@@ -99,11 +99,11 @@ public abstract class PGN
     
     public static String getDateAsPGNDate(Date date)
     {
-        Calendar cal =Calendar.getInstance();
+        Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         return cal.get(Calendar.YEAR) + "."
-             + StringKit.getRights("00" + cal.get(Calendar.MONTH), 2) + "."
-             + StringKit.getRights("00" + cal.get(Calendar.DAY_OF_MONTH), 2);
+             + StringKit.getRights("00" + (cal.get(Calendar.MONTH) + 1)  , 2) + "."
+             + StringKit.getRights("00" +  cal.get(Calendar.DAY_OF_MONTH), 2);
     }
     
     //======================================================================

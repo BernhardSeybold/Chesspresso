@@ -828,12 +828,12 @@ public final class Position extends AbstractMoveablePosition
             /*---------- update castles ----------*/
             int castles = getCastles();
             if (castles != NO_CASTLES) {
-                if      (sqiFrom == Chess.A1 || sqiTo == Chess.A1) {castles &= ~WHITE_LONG_CASTLE;}
-                else if (sqiFrom == Chess.H1 || sqiTo == Chess.H1) {castles &= ~WHITE_SHORT_CASTLE;}
-                else if (sqiFrom == Chess.A8 || sqiTo == Chess.A8) {castles &= ~BLACK_LONG_CASTLE;}
-                else if (sqiFrom == Chess.H8 || sqiTo == Chess.H8) {castles &= ~BLACK_SHORT_CASTLE;}
-                else if (sqiFrom == Chess.E1) {castles &= ~WHITE_CASTLE;}
-                else if (sqiFrom == Chess.E8) {castles &= ~BLACK_CASTLE;}
+                if (sqiFrom == Chess.A1 || sqiTo == Chess.A1) {castles &= ~WHITE_LONG_CASTLE;}
+                if (sqiFrom == Chess.H1 || sqiTo == Chess.H1) {castles &= ~WHITE_SHORT_CASTLE;}
+                if (sqiFrom == Chess.A8 || sqiTo == Chess.A8) {castles &= ~BLACK_LONG_CASTLE;}
+                if (sqiFrom == Chess.H8 || sqiTo == Chess.H8) {castles &= ~BLACK_SHORT_CASTLE;}
+                if (sqiFrom == Chess.E1) {castles &= ~WHITE_CASTLE;}
+                if (sqiFrom == Chess.E8) {castles &= ~BLACK_CASTLE;}
                 setCastles(castles);
             }
         }
